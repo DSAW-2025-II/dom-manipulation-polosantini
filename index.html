@@ -4,10 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
+    <title>To-Do List</title>
   </head>
+
+
   <body>
-    <h1>Mi TODO list</h1>
-    <script src="scripts/script.js"></script>
+
+    <h1>Mi To-Do List</h1>
+
+    <div class="contenedor-tareas">
+      <h2>Tareas Pendientes</h2>
+
+      <div class="tabla-tareas">
+
+        <table>
+
+          <thead>
+            <th>Tarea</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>✓</th>
+            <th>X</th>
+          </thead>
+          
+          <tbody id="tablaTareas"></tbody>
+
+        </table>
+
+      </div>
+
+      <div class="contenedor-botones">
+
+        <input type="text" id ="tareaInput" placeholder="Ingrese su nueva tarea aquí">
+        <input type="date" id="fechaInput">
+        <button id="agregarButton">Agregar</button>
+
+      </div>
+      
+
+    </div>
+
+    <div class="contenedor-tareas">
+      <h2>Tareas Completadas</h2>
+      <div class="tabla-tareas">
+
+        <table>
+
+          <thead>
+            <th>Tarea</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>⟲</th>
+            <th>X</th>
+          </thead>
+          
+          <tbody id="tablaTareasCompletas"></tbody>
+
+        </table>
+
+      </div>
+    </div>
+
+  <script src="./scripts/script.js"></script>
   </body>
+
 </html>
